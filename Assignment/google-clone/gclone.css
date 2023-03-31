@@ -1,0 +1,142 @@
+/* Default */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 2px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .bar {
+    height: 40px;
+  }
+  
+  /* Nav */
+  
+  nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 1rem 0 0;
+    height: 4rem;
+  }
+  .nav-links {
+    margin: 9px;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+  }
+  .nav-links img{
+    width: 20px;
+    height: 20px;
+  }
+  .nav-btn {
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .nav-btn:hover{
+    text-decoration: none;
+    box-shadow: 0 0 50px #ccc;
+    background-color: #1a73e89e;
+  }
+  
+  /*Main */
+  
+  main {
+    height: 75vh;
+    text-align: center;
+    display: grid;
+    place-content: center;
+  }
+  
+  .brand {
+    margin: 1rem;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Search */
+  
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.7rem;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid rgb(112, 112, 112, 0.2);
+    border-radius: 50px;
+  }
+  .search input {
+    border: none;
+    outline: none;
+    margin: 1px 1rem;
+    width: 100%;
+  }
+  .search img{
+    height: 30px;
+  }
+  .search .img3{
+    height: 20px;
+  }
+  
+  .search:hover {
+    box-shadow: 0 0 30px #ccc;
+  }
+  .search input:hover {
+    box-shadow: none;
+  }
+  
+  /* Buttons */
+  
+  .search-btn {
+    padding: 7px 1.3rem;
+    margin: 1.6rem 1px;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 3px;
+  }
+  .search-btn:hover {
+    box-shadow: 0 0 30px #ccc;
+  }
+  
+  /* lang */
+  
+  .lang {
+    font-size: 13px;
+    color: rgb(0, 0, 17);
+  }
+  
+  /* Footer */
+  
+  footer {
+    color: #70757a;
+    background-color: rgb(112, 117, 122, 0.1);
+    font-size: 14px;
+  }
+  .footer-1 {
+    padding: 17px 0 0 20px;
+    height: 2rem;
+    border-bottom: 1px solid #dadce0;
+  }
+  .footer-2 {
+    padding: 5px;
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-2 section a {
+    color: #70757a;
+    margin: 0 10px;
+  }
+  
