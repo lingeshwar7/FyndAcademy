@@ -121,6 +121,7 @@
    font-family: 'Playfair Display',serif;
    text-shadow:2px 4px 6px white;
    filter: drop-shadow(0px 0px 1px rgb(1, 79, 5));
+   
   }
 
   #learn{
@@ -219,9 +220,34 @@
 
 
 #request-form {
-  margin: auto;
+
+  /*  */
+  color:#000;
+  text-shadow:-1px -1px 0 #83AF9B,1px -1px 0 #83AF9B,-1px  1px 0 #83AF9B,1px  1px 0 #83AF9B;
+  background-image: url('https://wallup.net/wp-content/uploads/2017/03/28/341875-forest-mist.jpg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: cover;
+  background-position: center;
+  background-repeat:space;
+  animation: sway 25s ease-in-out infinite;
+  
+}
+@keyframes sway {
+  0% {
+    background-position: 0px;
+  }
+  50% {
+    background-position: -300px;
+  }
+  100%{
+    background-position: 0px;
+  }
+}
+#request-form .info{
   max-width: 800px;
   padding: 30px;
+  margin: auto;
 }
 
 
@@ -236,6 +262,7 @@
   font-size: 18px;
   font-weight:200;
   margin-bottom: 20px;
+  text-align: center;
 }
 #request-form h2{
   font-size: 25px;
@@ -298,11 +325,6 @@ input[type=button]:hover {
 }
 
 
-
-
-
-
-
 /* section -1 */
 
 
@@ -312,7 +334,7 @@ input[type=button]:hover {
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
-  
+  padding-bottom: 10px;
 }
 
 #section-1 h2 {
@@ -336,26 +358,30 @@ input[type=button]:hover {
   
 }
 
+
+
+/*  */
 #section-1 .modal {
-  display: none;
+  display: none; 
   position: fixed;
-  z-index: 1;
+  z-index: 1; 
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); 
 }
+
 
 #section-1 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  border-radius: 5px;
-  max-width: 600px;
+  width: 80%;
 }
+
 
 #section-1 .close {
   color: #aaa;
@@ -364,66 +390,196 @@ input[type=button]:hover {
   font-weight: bold;
 }
 
+
 #section-1 .close:hover,
 #section-1 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-#section-1 h1 {
-  color: #333;
-  font-size: 1rem;
-  text-align: center;
-  
-}
-
-#section-1 form#f {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-#section-1 legend {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
 
 #section-1 label {
   display: block;
-  font-size: 1.2rem;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
-#section-1 input[type="text"],
-#section-1 input[type="email"],
-#section-1 input[type="tel"] {
+#section-1 input[type=text],
+#section-1 input[type=email],
+#section-1 input[type=tel] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
 }
 
-#section-1 input[type="submit"],
-#section-1 input[type="button"] {
-  padding: 10px 30px;
+
+#section-1 input[type=text]:focus,
+#section-1 input[type=email]:focus,
+#section-1 input[type=tel]:focus {
+  border: 2px solid #4CAF50;
+}
+
+
+#section-1 input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
-  background-color: #56C1D1;
-  color: #fff;
-  font-size: 1.2rem;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-#section-1 input[type="submit"]:hover,
-#section-1 input[type="button"]:hover {
-  background-color: #438EA8;
+
+#section-1 input[type=submit]:hover {
+  background-color: #45a049;
 }
+
+
+#section-1 input[type=button] {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+#section-1 input[type=button]:hover {
+  background-color: #e53935;
+}
+
+
+
+/*  */
+
+.form-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+
+/* calculators */
+
+.t-c-b {
+  background-color: #F1F1F1; 
+}
+
+.c-c-c {
+  background-color: #E5E5E5;
+}
+
+.t-s-d-c {
+  background-color: #D9D9D9;
+  padding: 20px 0px;
+}
+
+
+.t-c-b, .c-c-c {
+  padding: 20px 70px;
+}
+
+
+
+
+.t-c-b, .c-c-c {
+  margin-bottom: 40px;
+}
+
+
+.t-c-b h1, .c-c-c h1, .t-s-d-c h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3e8e41; 
+}
+
+
+#result-b, #result-c, #output {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.t-c-b p, .c-c-c p, .t-s-d-c p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
 
 
 
@@ -433,6 +589,8 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  width: auto;
+  height: 150px;
 }
 
 .container {
@@ -469,3 +627,4 @@ footer {
   text-decoration: none;
   color: #ccc;
 }
+
